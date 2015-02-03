@@ -115,8 +115,13 @@ repository:
     - include: "#interpolation"
 
   interpolation:
-    name: variable.parameter
-    match: (\%(([1-9][0-9]*|[0-9])|([$_a-zA-Z][$_a-zA-Z0-9]*)))\b
+    patterns:
+    - name: variable.parameter.index
+      match: \%([1-9][0-9]*|[0-9])(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?
+    - name: variable.parameter.name
+      match: \%([$_a-zA-Z][$_a-zA-Z0-9]*)(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?
+    - name: variable.parameter.position
+      match: \%(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?
 
   comment:
     name: comment.line.number-sign

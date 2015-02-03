@@ -1,39 +1,18 @@
 <!-- A Test Script -->
 <h2>title</h2>
-<(hello)="howdy">
-</hello>
 
-<hello howdy='there'/>
-</hello>
-
-let defaultRenderList = @renderList(people)
-
-defaultRenderList()
-
-def renderList(people)
-  # will be shadowed
-end
-
-def renderList(people)
-  # otherwise will fall through to this
-  people | "There are %length stooges"
+def renderList(items, block)
   <ul>
-  for person in people, brother in person.brothers
-    renderItem(person.name, brother)
+  for item in items
+    <li> block(item) </li>
   end
   </ul>
 end
 
-def renderList(people)
-when not people
-  # will be called if people is not defined or is empty
-  <b>"There are no people!"</b>
+def renderList(items) when not items  # guard wins
+  <b> "nothing to render" </b> 
 end
 
-def renderItem(name, brother)
-  <li>"%brother is the brother of %name"</li>
-end
-
-def renderTest(name)
-  "Hello %name"
+renderList(people) do |item|  # 'with' would have also worked
+  item | "Their name is %name and they are %age|pluralize year(s) old"
 end
