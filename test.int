@@ -1,6 +1,8 @@
+from string import pluralizer
+let years = pluralizer('year')
+
 <!-- A Test Script -->
 <h2>title</h2>
-
 def renderList(items, block)
   <ul>
   for item in items
@@ -14,5 +16,5 @@ def renderList(items) when not items  # guard wins
 end
 
 renderList(people) do |item|  # 'with' would have also worked
-  item | "Their name is %name and they are %age|pluralize year(s) old"
+  item | "Their name is %name and they are %age|years old"
 end
