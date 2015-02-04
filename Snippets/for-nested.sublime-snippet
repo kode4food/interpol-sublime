@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[for ${1:item} in ${2:list}, ${3:sub_item} in ${4:sub_list}
+  $0
+end]]></content>
+  <tabTrigger>forn</tabTrigger>
+  <scope>source.interpol</scope>
+  <description>nested for … end</description>
+</snippet>

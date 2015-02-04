@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[for ${1:item} in ${2:list}
+  $0
+else
+
+end]]></content>
+  <tabTrigger>fore</tabTrigger>
+  <scope>source.interpol</scope>
+  <description>for … else … end</description>
+</snippet>
