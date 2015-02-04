@@ -2,7 +2,7 @@
   <content><![CDATA[def ${1:partial_name}(${2:args}) when ${3:guard}
   $0
 end]]></content>
-  <tabTrigger>defg</tabTrigger>
+  <tabTrigger>defw</tabTrigger>
   <scope>source.interpol</scope>
-  <description>guarded def(args) … end</description>
+  <description>def(args) when … end</description>
 </snippet>

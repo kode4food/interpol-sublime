@@ -2,7 +2,7 @@
   <content><![CDATA[for ${1:item} in ${2:list} when ${3:guard}
   $0
 end]]></content>
-  <tabTrigger>forg</tabTrigger>
+  <tabTrigger>forw</tabTrigger>
   <scope>source.interpol</scope>
-  <description>guarded for … end</description>
+  <description>for when … end</description>
 </snippet>
