@@ -1,4 +1,5 @@
 *.int.js
+*.pyc
 
 pids
 logs
