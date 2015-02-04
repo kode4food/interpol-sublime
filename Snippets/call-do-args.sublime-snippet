@@ -2,7 +2,7 @@
   <content><![CDATA[${1:partial_name}(${2:args}) do |${3:block_args}|
   $0
 end]]></content>
-  <tabTrigger>calldoa</tabTrigger>
+  <tabTrigger>cdoa</tabTrigger>
   <scope>source.interpol</scope>
-  <description>call do |args| … end</description>
+  <description>call() do || … end</description>
 </snippet>

@@ -4,5 +4,5 @@
 end]]></content>
   <tabTrigger>defw</tabTrigger>
   <scope>source.interpol</scope>
-  <description>def(args) when … end</description>
+  <description>def() when … end</description>
 </snippet>

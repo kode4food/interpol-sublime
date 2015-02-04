@@ -4,5 +4,5 @@
 end]]></content>
   <tabTrigger>doa</tabTrigger>
   <scope>source.interpol</scope>
-  <description>do |args| … end</description>
+  <description>do || … end</description>
 </snippet>

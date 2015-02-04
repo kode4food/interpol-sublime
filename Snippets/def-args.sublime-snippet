@@ -4,5 +4,5 @@
 end]]></content>
   <tabTrigger>defa</tabTrigger>
   <scope>source.interpol</scope>
-  <description>def(args) … end</description>
+  <description>def() … end</description>
 </snippet>
