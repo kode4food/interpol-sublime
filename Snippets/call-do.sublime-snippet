@@ -3,6 +3,6 @@
   $0
 end]]></content>
   <tabTrigger>cdo</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - meta.tag.other.html</scope>
   <description>call() do … end</description>
 </snippet>

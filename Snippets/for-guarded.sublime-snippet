@@ -3,6 +3,6 @@
   $0
 end]]></content>
   <tabTrigger>forw</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - meta.tag.other.html</scope>
   <description>for when … end</description>
 </snippet>

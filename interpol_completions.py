@@ -1,19 +1,18 @@
 import sublime, sublime_plugin
 
 interpol_simple_tags = [
-  "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio",
-  "base", "basefont", "bdi", "bdo", "big", "blockquote", "body", "br",
-  "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup",
-  "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl",
-  "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "frame",
-  "frameset", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup",
-  "hr", "html", "input", "ins", "kbd", "keygen", "label", "legend",
-  "li", "main", "map", "mark", "menu", "menuitem", "meta", "meter", "nav",
-  "noframes", "noscript", "object", "ol", "optgroup", "option", "output",
-  "pre", "progress", "rp", "rt", "ruby", "samp", "section", "select", "small",
-  "source", "span", "strike", "strong", "sub", "summary", "sup", "table",
-  "tbody", "td", "textarea", "tfoot", "th", "thead", "time", "title", "tr",
-  "track", "tt", "ul", "var", "video", "wbr"
+    "abbr", "address", "area", "article", "aside", "audio", "base", "bdi", 
+    "bdo", "blockquote", "body", "br", "button", "canvas", "caption", "cite", 
+    "code", "col", "colgroup", "datalist", "dd", "del", "details", "dfn", 
+    "dialog", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", 
+    "figure", "font", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", 
+    "hgroup", "hr", "html", "input", "ins", "kbd", "keygen", "label", "legend", 
+    "li", "main", "map", "mark", "menu", "menuitem", "meta", "meter", "nav", 
+    "noscript", "object", "ol", "optgroup", "option", "output", "pre", 
+    "progress", "rp", "rt", "ruby", "samp", "section", "select", "small", 
+    "source", "span", "strong", "sub", "summary", "sup", "table", "tbody", 
+    "td", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", 
+    "ul", "var", "video", "wbr"
 ]
 
 interpol_completion_items = [
@@ -48,8 +47,4 @@ class InterpolCompletions(sublime_plugin.EventListener):
                 (prefix + "\tTag", prefix + ">$1</" + prefix + ">")
             )
 
-        return (
-            result, 
-            sublime.INHIBIT_WORD_COMPLETIONS | 
-                sublime.INHIBIT_EXPLICIT_COMPLETIONS
-        )
+        return (result, sublime.INHIBIT_WORD_COMPLETIONS)

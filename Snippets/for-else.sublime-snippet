@@ -5,6 +5,6 @@ else
 
 end]]></content>
   <tabTrigger>fore</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - meta.tag.other.html</scope>
   <description>for … else … end</description>
 </snippet>

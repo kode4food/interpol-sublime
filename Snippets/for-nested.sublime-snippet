@@ -3,6 +3,6 @@
   $0
 end]]></content>
   <tabTrigger>forn</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - meta.tag.other.html</scope>
   <description>nested for … end</description>
 </snippet>
