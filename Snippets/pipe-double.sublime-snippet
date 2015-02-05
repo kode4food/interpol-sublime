@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[${1:expr} | "${2:string}"]]></content>
+  <tabTrigger>pd</tabTrigger>
+  <scope>source.interpol</scope>
+  <description>expr | "string"</description>
+</snippet>
