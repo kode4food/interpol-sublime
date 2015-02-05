@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[[${1:expr} for ${2:item} in ${3:list} when ${4:guard}]]]></content>
   <tabTrigger>lcg</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - punctuation.definition.tag.name.html</scope>
   <description>[for … in … when]</description>
 </snippet>

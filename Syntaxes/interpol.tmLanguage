@@ -140,13 +140,18 @@
 		<key>html-tag</key>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?)</string>
+			<string>(&lt;/?)([$_a-zA-Z][$_a-zA-Z0-9]*)?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.tag.begin.html</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.name.html</string>
 				</dict>
 			</dict>
 			<key>end</key>

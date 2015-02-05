@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[${1:expr} | "${2:string}"]]></content>
   <tabTrigger>pd</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - punctuation.definition.tag.name.html</scope>
   <description>expr | "string"</description>
 </snippet>

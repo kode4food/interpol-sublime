@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[[${1:expr} for ${2:item} in ${3:list}]]]></content>
   <tabTrigger>lc</tabTrigger>
-  <scope>source.interpol</scope>
+  <scope>source.interpol - punctuation.definition.tag.name.html</scope>
   <description>[for … in]</description>
 </snippet>

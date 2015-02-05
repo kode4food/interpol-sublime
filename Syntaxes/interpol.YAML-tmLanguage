@@ -54,9 +54,10 @@ repository:
 
   html-tag:
     name: meta.tag.other.html
-    begin: (</?)
+    begin: (</?)([$_a-zA-Z][$_a-zA-Z0-9]*)?
     beginCaptures:
       '1': { name: punctuation.definition.tag.begin.html }
+      '2': { name: punctuation.definition.tag.name.html }
     end: (/?>)
     endCaptures:
       '1': { name: punctuation.definition.tag.end.html }
