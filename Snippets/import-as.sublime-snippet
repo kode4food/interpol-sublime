@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[import ${1:module} as ${2:alias}
+]]></content>
+  <tabTrigger>impa</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>import … as</description>
+</snippet>

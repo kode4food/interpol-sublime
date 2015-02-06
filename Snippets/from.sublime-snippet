@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[from ${1:module} import ${2:partial}
+]]></content>
+  <tabTrigger>from</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>from … import</description>
+</snippet>

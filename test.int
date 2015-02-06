@@ -1,8 +1,9 @@
-from string import pluralizer
-let years = pluralizer('year')
+from render import pluralizer
+let years = pluralizer('% year', '% years')
 
 <!-- A Test Script -->
 <h2>title</h2>
+
 def renderList(items, block)
   <ul>
   for item in items

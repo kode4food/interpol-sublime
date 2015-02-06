@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[from ${1:module} import ${2:partial} as ${3:alias}
+]]></content>
+  <tabTrigger>froma</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>from … import … as</description>
+</snippet>
