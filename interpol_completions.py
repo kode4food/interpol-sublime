@@ -34,12 +34,12 @@ interpol_completion_list = [(item[0] + "\tTag", item[1]) for item in interpol_co
 class InterpolCompletions(sublime_plugin.EventListener):
     def on_query_completions(self, view, prefix, locations):
         if not view.match_selector(locations[0], "source.interpol"):
-            return []
+            return None
 
         pt = locations[0] - len(prefix) - 1
         ch = view.substr(sublime.Region(pt, pt + 1))
         if ch != '<':
-            return []
+            return None
 
         result = list(interpol_completion_list)
         if prefix not in interpol_completion_tags:
@@ -47,4 +47,7 @@ class InterpolCompletions(sublime_plugin.EventListener):
                 (prefix + "\tTag", prefix + ">$1</" + prefix + ">")
             )
 
-        return (result, sublime.INHIBIT_WORD_COMPLETIONS)
+        return (
+            result, 
+            sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS
+        )

@@ -19,3 +19,5 @@ end
 renderList(people) do |item|  # 'with' would have also worked
   item | "Their name is %name and they are %age|years old"
 end
+
+
