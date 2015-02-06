@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[let ${1:var} = ${2:expr}]]></content>
+  <tabTrigger>let</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>let … = …</description>
+</snippet>

@@ -1,6 +1,5 @@
 <snippet>
-  <content><![CDATA[import ${1:module}
-]]></content>
+  <content><![CDATA[import ${1:module}]]></content>
   <tabTrigger>imp</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>
   <description>import</description>
