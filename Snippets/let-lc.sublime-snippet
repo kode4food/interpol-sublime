@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[let ${1:var} = [${2:expr} for ${3:item} in ${4:list}]]]></content>
+  <tabTrigger>letlc</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>let … = [for … in]</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA["${1:interpolation}" [
+  ${2:name} = ${3:value}
+]]]></content>
+  <tabTrigger>pstr</tabTrigger>
+  <scope>source.interpol - punctuation.definition.tag.name.html</scope>
+  <description>"str" [params]</description>
+</snippet>

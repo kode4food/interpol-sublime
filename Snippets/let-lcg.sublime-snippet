@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[let ${1:var} = [${2:expr} for ${3:item} in ${4:list} when ${5:guard}]]]></content>
+  <tabTrigger>letlcg</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>let … = [for … in … when]</description>
+</snippet>
