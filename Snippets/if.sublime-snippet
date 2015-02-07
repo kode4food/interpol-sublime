@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[if ${1:condition}
+  $2
+end]]></content>
+  <tabTrigger>if</tabTrigger>
+  <scope>source.interpol - meta.tag.other.html</scope>
+  <description>if … end</description>
+</snippet>

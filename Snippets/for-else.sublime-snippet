@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[for ${1:item} in ${2:list}
-  $0
+  $3
 else
-
+  $4
 end]]></content>
   <tabTrigger>fore</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>
