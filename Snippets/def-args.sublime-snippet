@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[def ${1:partial_name}(${2:args})
-  $0
+	$0
 end]]></content>
   <tabTrigger>defa</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>

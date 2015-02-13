@@ -1,3 +1,4 @@
+from string import title
 from render import pluralizer
 let years = pluralizer('% year', '% years')
 
@@ -7,7 +8,7 @@ let years = pluralizer('% year', '% years')
 def renderList(items, block)
   <ul>
   for item in items
-    <li> block(item) </li>
+    <li> item | block | title </li>
   end
   </ul>
 end
@@ -17,5 +18,5 @@ def renderList(items) when not items  # guard wins
 end
 
 renderList(people) do |item|  # 'with' would have also worked
-  item | "Their name is %name and they are %age|years old"
+  item | "their name is %name and they are %age|years old"
 end

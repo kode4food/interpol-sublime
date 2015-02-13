@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[${1:partial_name}(${2:args}) do |${3:block_args}|
-  $0
+	$0
 end]]></content>
   <tabTrigger>cdoa</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>

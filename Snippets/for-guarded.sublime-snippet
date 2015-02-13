@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[for ${1:item} in ${2:list} when ${3:guard}
-  $0
+	$0
 end]]></content>
   <tabTrigger>forw</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>

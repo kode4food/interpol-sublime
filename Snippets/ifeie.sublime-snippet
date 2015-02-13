@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[if ${1:condition}
-  $2
+	$2
 else if ${3:else_condition}
-  $4
+	$4
 else
-  $5
+	$0
 end]]></content>
   <tabTrigger>ifeie</tabTrigger>
   <scope>source.interpol - meta.tag.other.html</scope>
