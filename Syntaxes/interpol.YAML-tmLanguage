@@ -37,7 +37,9 @@ repository:
     captures:
       '0': { name: entity.name.tag.mustache }
     end: \}+
-
+    patterns:
+    - include: '#interpol'
+    
   html-comment:
     name: comment.block.html
     begin: <!--

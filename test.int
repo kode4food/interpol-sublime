@@ -3,6 +3,8 @@ from render import pluralizer
 let years = pluralizer('% year', '% years')
 
 <!-- A Test Script -->
+{{! comment }}
+
 <h2>title</h2>
 
 def renderList(items, block)

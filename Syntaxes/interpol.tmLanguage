@@ -356,6 +356,13 @@
 			<string>\}+</string>
 			<key>name</key>
 			<string>source.mustache.embedded.html</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#interpol</string>
+				</dict>
+			</array>
 		</dict>
 		<key>string</key>
 		<dict>
