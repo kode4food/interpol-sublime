@@ -48,6 +48,14 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#mustache-comment</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#mustache-tag</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#html-comment</string>
 				</dict>
 				<dict>
@@ -322,6 +330,32 @@
 					<string>#interpolation</string>
 				</dict>
 			</array>
+		</dict>
+		<key>mustache-comment</key>
+		<dict>
+			<key>begin</key>
+			<string>\{+\!</string>
+			<key>end</key>
+			<string>\}+</string>
+			<key>name</key>
+			<string>comment.block.mustache</string>
+		</dict>
+		<key>mustache-tag</key>
+		<dict>
+			<key>begin</key>
+			<string>\{+[^!][&amp;amp;&amp;gt;#^/]?</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.mustache</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\}+</string>
+			<key>name</key>
+			<string>source.mustache.embedded.html</string>
 		</dict>
 		<key>string</key>
 		<dict>

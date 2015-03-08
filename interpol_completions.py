@@ -1,5 +1,6 @@
 import sublime, sublime_plugin
 
+
 interpol_simple_tags = [
     "abbr", "address", "area", "article", "aside", "audio", "base", "bdi", 
     "bdo", "blockquote", "body", "br", "button", "canvas", "caption", "cite", 
