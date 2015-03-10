@@ -343,7 +343,7 @@
 		<key>mustache-tag</key>
 		<dict>
 			<key>begin</key>
-			<string>\{+[&amp;amp;&amp;gt;#^/]?</string>
+			<string>\{+[&amp;&gt;#^/]?</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
