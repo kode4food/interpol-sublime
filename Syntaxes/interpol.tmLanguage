@@ -42,6 +42,28 @@
 				</dict>
 			</array>
 		</dict>
+		<key>expression</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#keyword</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#identifier</string>
+				</dict>
+			</array>
+		</dict>
 		<key>html</key>
 		<dict>
 			<key>patterns</key>
@@ -199,23 +221,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#comment</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#keyword</string>
+					<string>#statement</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#constant</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#identifier</string>
+					<string>#expression</string>
 				</dict>
 			</array>
 		</dict>
@@ -249,13 +263,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(for|def|from|import|export|let|if|unless|do|with|as|in|else|end|when|where)\b</string>
-					<key>name</key>
-					<string>keyword.control</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(and|or|like|lt|gt|lte|le|gte|ge|mod|not)\b</string>
+					<string>\b(and|or|like|lt|gt|lte|le|gte|ge|mod|not|if|unless|else)\b</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
@@ -360,7 +368,19 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#interpol</string>
+					<string>#expression</string>
+				</dict>
+			</array>
+		</dict>
+		<key>statement</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(for|def|from|import|export|let|if|unless|do|with|as|in|else|end|when|where)\b</string>
+					<key>name</key>
+					<string>keyword.control</string>
 				</dict>
 			</array>
 		</dict>

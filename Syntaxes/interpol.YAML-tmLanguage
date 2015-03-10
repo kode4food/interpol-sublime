@@ -12,8 +12,13 @@ repository:
   interpol:
     patterns:
     - include: '#html'
-    - include: '#string'
     - include: '#comment'
+    - include: '#statement'
+    - include: '#expression'
+
+  expression:
+    patterns:
+    - include: '#string'
     - include: '#keyword'
     - include: '#constant'
     - include: '#identifier'
@@ -38,7 +43,7 @@ repository:
       '0': { name: entity.name.tag.mustache }
     end: \}+
     patterns:
-    - include: '#interpol'
+    - include: '#expression'
     
   html-comment:
     name: comment.block.html
@@ -144,12 +149,15 @@ repository:
     name: comment.line.number-sign
     match: (#.*$)
 
-  keyword:
+  statement:
     patterns:
     - name: keyword.control
       match: \b(for|def|from|import|export|let|if|unless|do|with|as|in|else|end|when|where)\b
+
+  keyword:
+    patterns:
     - name: keyword.operator
-      match: \b(and|or|like|lt|gt|lte|le|gte|ge|mod|not)\b
+      match: \b(and|or|like|lt|gt|lte|le|gte|ge|mod|not|if|unless|else)\b
     - name: keyword.operator
       match: ([\-+*\/|:@=(),\.\[\]]) 
 
