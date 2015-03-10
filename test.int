@@ -5,6 +5,10 @@ let years = pluralizer('% year', '% years')
 <!-- A Test Script -->
 {{! comment }}
 
+{{> hello there }}
+
+{{hello there}}
+
 <h2>title</h2>
 
 def renderList(items, block)

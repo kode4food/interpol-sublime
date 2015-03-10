@@ -33,7 +33,7 @@ repository:
 
   mustache-tag:
     name: source.mustache.embedded.html
-    begin: \{+[^!][&amp;&gt;#^/]?
+    begin: \{+[&amp;&gt;#^/]?
     captures:
       '0': { name: entity.name.tag.mustache }
     end: \}+
