@@ -170,7 +170,7 @@
 		<key>html-tag</key>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?)([$_a-zA-Z][$_a-zA-Z0-9-]*)?</string>
+			<string>(&lt;/?)((\w|[$_])(\w|\d|[$_-])*)?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -207,7 +207,7 @@
 		<key>identifier</key>
 		<dict>
 			<key>match</key>
-			<string>\b([$_a-zA-Z][$_a-zA-Z0-9]*)\b</string>
+			<string>\b((\w|[$_])(\w|\d|[$_])*)\b</string>
 			<key>name</key>
 			<string>variable.parameter</string>
 		</dict>
@@ -239,19 +239,19 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\%([1-9][0-9]*|[0-9])(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?</string>
+					<string>\%([1-9][0-9]*|[0-9])(\|(\w|[$_])(\w|\d|[$_])*)*;?</string>
 					<key>name</key>
 					<string>variable.parameter.index</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\%([$_a-zA-Z][$_a-zA-Z0-9]*)(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?</string>
+					<string>\%((\w|[$_])(\w|\d|[$_])*)(\|(\w|[$_])(\w|\d|[$_])*)*;?</string>
 					<key>name</key>
 					<string>variable.parameter.name</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\%(\|[$_a-zA-Z][$_a-zA-Z0-9]*)*;?</string>
+					<string>\%(\|(\w|[$_])(\w|\d|[$_-])*)*;?</string>
 					<key>name</key>
 					<string>variable.parameter.position</string>
 				</dict>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 from string import title
 from render import pluralizer
 let years = pluralizer('% year', '% years')
