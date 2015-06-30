@@ -170,7 +170,7 @@
 		<key>html-tag</key>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?)([$_a-zA-Z][$_a-zA-Z0-9]*)?</string>
+			<string>(&lt;/?)([$_a-zA-Z][$_a-zA-Z0-9-]*)?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
